@@ -8,7 +8,7 @@
 //require => importa benzer, disaridan dosya (modul) cekmeye yarar.
 const fs = require("fs");
 
-//---------------------------------------------------
+//--------------------------------------------------
 
 //SENKRON (Sync)
 //Senkron bir islem tamamlanincaya kadar, diger hicbir kodunn calismasina izin vermez
@@ -34,4 +34,3 @@ const newText =
   "Olusturulma Tarihi" +
   new Date().toLocaleDateString();
 fs.writeFileSync("./data/output.txt", newText);
-console.log("\nDosya yazma islemi tamamlandi! \n ");

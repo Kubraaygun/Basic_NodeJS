@@ -8,7 +8,7 @@
 //require => importa benzer, disaridan dosya (modul) cekmeye yarar.
 const fs = require("fs");
 
-//---------------------------------------------------
+//--------------------------------------------------
 
 //SENKRON (Sync)
 //Senkron bir islem tamamlanincaya kadar, diger hicbir kodunn calismasina izin vermez
