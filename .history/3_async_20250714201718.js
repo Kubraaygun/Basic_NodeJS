@@ -40,9 +40,6 @@ fs.writeFile(
   "./data/newOutput.txt",
   "merhaba,guncellenmis yazi budur",
   (err) => {
-    if (err) {
-      return console.log("Dosya Yazma Islemi Sirasinda Hata Olustu", err);
-    }
     //callback=> fonksiyon tamamlandiginda (hatali ya da hatasiz) calisacak fonksiyona denir.
     // yukarida yazdigimiz dosyayi oku ve bize gonder (bu ister asenkron ister senkron olsun)
 

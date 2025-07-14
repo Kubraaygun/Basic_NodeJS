@@ -39,14 +39,5 @@ Performansin onemli oldugu yerlerde ve kullanicinin beklemesini istemedigimiz ye
 fs.writeFile(
   "./data/newOutput.txt",
   "merhaba,guncellenmis yazi budur",
-  (err) => {
-    if (err) {
-      return console.log("Dosya Yazma Islemi Sirasinda Hata Olustu", err);
-    }
-    //callback=> fonksiyon tamamlandiginda (hatali ya da hatasiz) calisacak fonksiyona denir.
-    // yukarida yazdigimiz dosyayi oku ve bize gonder (bu ister asenkron ister senkron olsun)
-
-    const text = fs.readFileSync("./data/newOutput.txt", "utf-8");
-    console.log("Dosya Okundu: \n\n Kaydedilen Metin:\n\n :", text);
-  }
+  (err) => {}
 );
