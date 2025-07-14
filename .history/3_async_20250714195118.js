@@ -11,26 +11,10 @@ Asenkron Nerelerde Kullanilir?
 
 Performansin onemli oldugu yerlerde ve kullanicinin beklemesini istemedigimiz yerlerde asenkron yontem kullanmaliyiz. Buyuk dosya varsa ya da daha fazla girdi ve cikti varsa asenkron tercih etmemiz gerekir.
 */
-// fs.readFile("./data/ornek.txt", "utf-8", (err, data) => {
-//   if (err) {
-//     console.log("Hata Olustu", err);
-//   } else {
-//     console.log("Dosya Okundu: ", data);
-//   }
-// });
-
-fs.writeFile("./data2/output2.txt", "7.sezon backendden selamlar", (err) => {
+fs.readFile("./data/ornek.txt", "utf-8", (err, data) => {
   if (err) {
-    return console.log("Hataad", err);
+    console.log("Hata Olustu", err);
   } else {
-    console.log("Dosya Yazma Islemi Tamamlandi!");
-  }
-});
-
-fs.unlink("./data/bozuk.txt", (err) => {
-  if (err) {
-    return console.log("Dosya Silme Islemi Sirasinda Hata Olustu", err);
-  } else {
-    console.log("Bozuk Dosya Silindi!");
+    console.log("Dosya Okundu: ", data);
   }
 });

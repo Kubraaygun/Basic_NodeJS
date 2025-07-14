@@ -19,18 +19,11 @@ Performansin onemli oldugu yerlerde ve kullanicinin beklemesini istemedigimiz ye
 //   }
 // });
 
-fs.writeFile("./data2/output2.txt", "7.sezon backendden selamlar", (err) => {
+fs.writeFile("./data/output2.txt", "7.sezon backendden selamlar", (err) => {
   if (err) {
-    return console.log("Hataad", err);
+    return console.log("Hata", err);
   } else {
-    console.log("Dosya Yazma Islemi Tamamlandi!");
-  }
-});
-
-fs.unlink("./data/bozuk.txt", (err) => {
-  if (err) {
-    return console.log("Dosya Silme Islemi Sirasinda Hata Olustu", err);
-  } else {
-    console.log("Bozuk Dosya Silindi!");
+    console.log;
+    ("Dosya Yazma Islemi Tamamlandi!");
   }
 });

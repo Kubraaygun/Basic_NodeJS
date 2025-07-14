@@ -26,11 +26,3 @@ fs.writeFile("./data2/output2.txt", "7.sezon backendden selamlar", (err) => {
     console.log("Dosya Yazma Islemi Tamamlandi!");
   }
 });
-
-fs.unlink("./data/bozuk.txt", (err) => {
-  if (err) {
-    return console.log("Dosya Silme Islemi Sirasinda Hata Olustu", err);
-  } else {
-    console.log("Bozuk Dosya Silindi!");
-  }
-});
