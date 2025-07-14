@@ -15,4 +15,8 @@ console.log("join():", path.join(...newFilePath), "\n"); // dizinleri birlestiri
 console.log("resolve():", path.resolve("./data/ornek.txt"), "\n"); // mutlak yolu verir
 //yolu en basit hale getirme
 
-console.log("normalize():", path.normalize("/users/start.tsx"), "\n"); // fazladan / varsa temizler
+console.log(
+  "normalize():",
+  path.normalize("/users/kubraaygun/..//start.tsx"),
+  "\n"
+); // fazladan / varsa temizler
