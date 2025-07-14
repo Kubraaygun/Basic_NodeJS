@@ -48,4 +48,3 @@ const fs = require("fs");
 //5)Dosya/Dizinin Adini Degistirme
 
 fs.renameSync("./challenge", "./important");
-console.log("\n Isim degistirme islemi basariyla tamamlandi");

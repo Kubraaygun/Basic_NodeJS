@@ -23,16 +23,16 @@ const fs = require("fs");
 //fs modulu ile dosya islemleri yapabiliriz.
 //1) Dosya Okuma
 //readFileSync => senkron okuma islemi yapar, yani dosya okunana kadar bekler.
-//const text = fs.readFileSync("./data/ornek.txt", "utf-8");
+const text = fs.readFileSync("./data/ornek.txt", "utf-8");
 //okudugumuz dosyayi consolde gosterelim
 // console.log(text);
 
 //2)Dosya Yazma
 // Gonderilecek metnin icerigini hazirliyoruz..
-//const newText =
-// "Merhaba, bu dosya senkron olarak yazildi!" +
-//   "Olusturulma Tarihi" +
-//new Date().toLocaleDateString();
+const newText =
+  "Merhaba, bu dosya senkron olarak yazildi!" +
+  "Olusturulma Tarihi" +
+  new Date().toLocaleDateString();
 //eger verilen dizinde dosya zaten varsa gunceller, yoksa yenisini olusturup icerigini belirler.
 // fs.writeFileSync("./data/output.txt", newText);
 // console.log("\nDosya yazma islemi tamamlandi! \n ");
@@ -48,4 +48,3 @@ const fs = require("fs");
 //5)Dosya/Dizinin Adini Degistirme
 
 fs.renameSync("./challenge", "./important");
-console.log("\n Isim degistirme islemi basariyla tamamlandi");
